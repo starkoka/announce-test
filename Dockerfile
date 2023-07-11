@@ -11,6 +11,9 @@ ENV TZ JST-9
 ENV TERM xterm
 
 RUN apt install -y vim less
-RUN curl https://get.volta.sh | bash
-RUN exec $SHELL -l
-RUN volta install node
+RUN apt install -y curl
+RUN apt-get install -y nodejs npm
+RUN npm install n -g
+RUN n 18.16.0
+RUN cd app
+RUN npm install
