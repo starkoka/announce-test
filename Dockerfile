@@ -22,3 +22,4 @@ RUN apt-get install -y nodejs npm
 RUN npm install n -g
 RUN n 18.16.0
 WORKDIR /app
+RUN npm install
