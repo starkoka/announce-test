@@ -9,10 +9,10 @@ services:
       - node_modules:/app/node_modules
     command: >
       sh -c "
-      ls &&
       apt update && 
       cd app &&
       npm update &&
+      pip install 
       npm run dev
       "
 volumes:
