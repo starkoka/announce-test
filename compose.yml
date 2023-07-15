@@ -12,7 +12,6 @@ services:
       ls &&
       apt update && 
       cd app &&
-      npm install &&
       npm update &&
       npm run dev
       "

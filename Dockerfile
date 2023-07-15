@@ -14,5 +14,14 @@ ENV TERM xterm
 RUN apt-get install -y vim less
 RUN apt-get install -y curl
 RUN apt-get  install -y npm
+RUN apt-get install -y vim less
+RUN apt-get install python3 -y
+RUN apt-get install python3.10-venv -y
+RUN apt-get install pip -yu
+RUN apt-get install -y curl
+RUN apt-get install -y nodejs npm
 RUN npm install n -g
 RUN n 18.16.0
+RUN cd app
+RUN npm install
+RUN python3 -m venv env
