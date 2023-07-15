@@ -10,7 +10,6 @@ services:
     command: >
       sh -c "
       cd app &&
-      npm install &&
       npm update &&
       npm run dev
       "

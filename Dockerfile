@@ -11,9 +11,13 @@ ENV TZ JST-9
 ENV TERM xterm
 
 RUN apt install -y vim less
+RUN apt install python3 -y
+RUN apt install python3.10-venv -y
+RUN apt install pip -yu
 RUN apt install -y curl
 RUN apt-get install -y nodejs npm
 RUN npm install n -g
 RUN n 18.16.0
 RUN cd app
 RUN npm install
+RUN python3 -m venv env
