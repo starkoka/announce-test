@@ -2,9 +2,8 @@ import { collection, getDocs, getFirestore} from 'firebase/firestore';
 
 export type Book = {
     id: string
-    title: string
+    name: string
     author: string
-    price: number
 }
 
 export async function getBooks(): Promise<Book[]>{
