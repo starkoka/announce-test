@@ -16,5 +16,6 @@ export async function getBooks(): Promise<Book[]>{
         books.push({...book,id: doc.id});
     })
 
+    books.reverse(); //新しいものを先頭にもっていく
     return books;
 }
