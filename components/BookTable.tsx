@@ -11,7 +11,7 @@ export const BookTable: FC = () => {
             <ul>
                 {books.map((book)=>(
                     <li key={book.id} className={styles.text}>
-                        {book.title} / {book.author} / {book.price}
+                        {book.name} | {book.author}
                     </li>
                 ))}
             </ul>
