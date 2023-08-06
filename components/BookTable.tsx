@@ -7,10 +7,10 @@ export const BookTable: FC = () => {
     if (isLoading) return <p>Loading...</p>
 
     return(
-        <div className={styles.main}>
+        <div>
             <ul>
                 {books.map((book)=>(
-                    <li key={book.id} className={styles.text}>
+                    <li key={book.id} className={styles.main}>
                         {book.name} | {book.author}
                     </li>
                 ))}
