@@ -17,11 +17,14 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: black;
+  background: #EDF2F7;
+  text-align: center;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2em;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
